@@ -78,5 +78,4 @@ rf.fit(X_train, y_train)
 
 pickle.dump(rf, open("car_model.pkl", "wb"))
 
-!ls
 
