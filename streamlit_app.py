@@ -7,17 +7,26 @@ Original file is located at
     https://colab.research.google.com/drive/1ry-Mga-v0icrqK0P91VPwjV-XCHkIamY
 """
 
+import streamlit as st
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import r2_score
+st.title("🚗 Car Price Prediction App")
 
-import pickle
+st.write("Welcome! This is my ML project")
+
+df = pd.read_csv("car data.csv")
+
+st.subheader("Dataset Preview")
+st.write(df.head())
+
+st.title("🚗 Car Price Prediction App")
+
+st.write("Welcome! This is my ML project")
+
+df = pd.read_csv("car data.csv")
+
+st.subheader("Dataset Preview")
+st.write(df.head())
 
 df = pd.read_csv("/content/car data.csv")
 df.head()
