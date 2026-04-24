@@ -23,12 +23,10 @@ st.title("🚗 Car Price Prediction App")
 
 st.write("Welcome! This is my ML project")
 
-df = pd.read_csv("car data.csv")
-
 st.subheader("Dataset Preview")
 st.write(df.head())
 
-df = pd.read_csv("/content/car data.csv")
+df = pd.read_csv("car data.csv")
 df.head()
 
 df.columns = df.columns.str.strip().str.lower()
